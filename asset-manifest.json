@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/test_holyWater/static/css/main.6063c591.css",
-    "main.js": "/test_holyWater/static/js/main.b7ec18ba.js",
+    "main.css": "/test_holyWater/static/css/main.bcd140fa.css",
+    "main.js": "/test_holyWater/static/js/main.2c510d2b.js",
     "index.html": "/test_holyWater/index.html",
-    "main.6063c591.css.map": "/test_holyWater/static/css/main.6063c591.css.map",
-    "main.b7ec18ba.js.map": "/test_holyWater/static/js/main.b7ec18ba.js.map"
+    "main.bcd140fa.css.map": "/test_holyWater/static/css/main.bcd140fa.css.map",
+    "main.2c510d2b.js.map": "/test_holyWater/static/js/main.2c510d2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6063c591.css",
-    "static/js/main.b7ec18ba.js"
+    "static/css/main.bcd140fa.css",
+    "static/js/main.2c510d2b.js"
   ]
 }
