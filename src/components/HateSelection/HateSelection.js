@@ -45,6 +45,10 @@ const HateSelection = ({ messages }) => {
     navigate('/quiz/5');
   };
 
+  const handleItemClick = (option) => {
+    toggleOption(option);
+  };
+
   const questionParts = hateQuestion.split(' ');
   const questionWithHighlightedWord = questionParts.map((word, index) => {
     if (index === 3) {
@@ -60,7 +64,7 @@ const HateSelection = ({ messages }) => {
       <QuestionContainer>
         <Question>{questionWithHighlightedWord}</Question>
         <div>
-          <HateInBookItem>
+          <HateInBookItem onClick={() => handleItemClick(logic)}>
             <label htmlFor='logic'>{logic}</label>
             <Checkbox
               type='checkbox'
@@ -69,7 +73,7 @@ const HateSelection = ({ messages }) => {
               onChange={() => toggleOption(logic)}
             />
           </HateInBookItem>
-          <HateInBookItem>
+          <HateInBookItem onClick={() => handleItemClick(speed)}>
             <label htmlFor='speed'>{speed}</label>
             <Checkbox
               type='checkbox'
@@ -78,7 +82,7 @@ const HateSelection = ({ messages }) => {
               onChange={() => toggleOption(speed)}
             />
           </HateInBookItem>
-          <HateInBookItem>
+          <HateInBookItem onClick={() => handleItemClick(humor)}>
             <label htmlFor='humor'>{humor}</label>
             <Checkbox
               type='checkbox'
@@ -87,7 +91,7 @@ const HateSelection = ({ messages }) => {
               onChange={() => toggleOption(humor)}
             />
           </HateInBookItem>
-          <HateInBookItem>
+          <HateInBookItem onClick={() => handleItemClick(ending)}>
             <label htmlFor='ending'>{ending}</label>
             <Checkbox
               type='checkbox'
